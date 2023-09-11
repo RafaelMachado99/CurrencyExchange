@@ -5,11 +5,13 @@ const options = customSelect.querySelector('.custom-select-options');
 
 toggle.addEventListener('click', () => {
   options.style.display = options.style.display === 'block' ? 'none' : 'block';
+  myFunction()
 });
 
 document.addEventListener('click', (event) => {
   if (!customSelect.contains(event.target))
     options.style.display = 'none'
+    myFunction()
 })
 
 const customSelect1 = document.querySelector('.custom-select1');
@@ -18,10 +20,12 @@ const options1 = customSelect1.querySelector('.custom-select-options1');
 
 toggle1.addEventListener('click', () => {
   options1.style.display = options1.style.display === 'block' ? 'none' : 'block';
+  myFunction()
 })
 document.addEventListener('click', (event1) => {
   if (!customSelect1.contains(event1.target))
     options1.style.display = 'none'
+    myFunction()
 })
 //Botao mover
 const trade = document.querySelector('.trade');
