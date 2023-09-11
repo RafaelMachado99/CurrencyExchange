@@ -7,7 +7,7 @@ const saida3 = document.querySelector('.saida3');
 const de = document.querySelector('.text');
 const para = document.querySelector('.text1');
 const botao = document.querySelector('.convers')
-botao.addEventListener('click', myFunction);
+entrada.addEventListener('input', myFunction);
 
 function myFunction() {
     const moeda1 = de.textContent
